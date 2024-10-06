@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/python
 import random
 
 # Generate events for 1000 timesteps
@@ -35,4 +35,4 @@ def generate_input_file(filename, num_timesteps=1000, num_events=500):
                 f.write(f"{event_type} {x} {y} {z} {timestep}\n")
 
 # Generate the input file with 1000 timesteps and 500 events
-generate_input_file("events.txt", num_timesteps=1000, num_events=500)
+generate_input_file("events.txt", num_timesteps=100, num_events=20)

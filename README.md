@@ -32,10 +32,10 @@ This code was developed as the base code for the project of **Parallel Computing
 ## Requirements
 
 - **C++ Compiler**: The C++ code relies on the standard C++ library.
-- **Python 3.x**: The Python script is used to generate event data for the fluid simulation.
+- **Python**: The Python script is used to generate event data for the fluid simulation.
 
 ### Libraries and Tools
-- Python 3.x
+- Python
 - Standard C++ libraries for compilation (e.g., `g++` or `clang++`).
 
 ## Installation
@@ -62,7 +62,7 @@ The Python script `generate_events.py` generates a file (`events.txt`) that spec
 
 1. **Run the Python script**:
     ```bash
-    python3 generate_events.py
+    python generate_events.py
     ```
 
     This will create an `events.txt` file with 1000 timesteps, where sources are density values, and forces are applied in positive directions along the X, Y, or Z axes.
@@ -96,7 +96,7 @@ Once you've generated the `events.txt` file, you can run the fluid simulation, w
 Here’s an example of how you can use the Python script to generate a file of events (`events.txt`):
 
 ```bash
-python3 generate_events.py
+python generate_events.py
 ```
 
 This will generate an event file like the following:
@@ -109,6 +109,11 @@ source 5 150
 force 0 1 0 400
 source 8 900
 ```
+
+### Problems with the generator
+If you are experiencing problems with the generator there is a events.txt file as an example in the root folder of the project.
+
+Use the file and contact the teaching staff to get help.
 
 ### Running the Simulation
 
